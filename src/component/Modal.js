@@ -194,14 +194,19 @@ const addBalance=()=>{
               <option value="Travel">travel</option>
          </select>
 
-              <LocalizationProvider dateAdapter={AdapterDayjs}> 
+              {/* <LocalizationProvider dateAdapter={AdapterDayjs}> 
               <DatePicker
               placeholder="dd/mm/yyyy"
               format="DD-MM-YYYY"
               value={date}
               onChange={(newValue)=>setDate(newValue)}
               />
-             </LocalizationProvider>
+             </LocalizationProvider> */}
+             <input name="date"
+  type="date" 
+  value={dayjs(date).format('YYYY-MM-DD')} 
+  onChange={(e) => setDate(dayjs(e.target.value))} 
+/>
             {isediting?(<Button onClick={updateExpense} variant="contained">Update Expense</Button>):<Button type="submit" variant="contained">Add Expense</Button>}
             <Button onClick={onClose} variant="contained">Cancel</Button>
             </Box>
