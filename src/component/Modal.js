@@ -186,13 +186,13 @@ const addBalance=()=>{
             <Box sx={{display:"flex", flexWrap:"wrap",gap:"10px"}}>
             <TextField sx={{width:"150px",gap:"10px"}} label=""  placeholder="title" name="title" type="text" value={title} onChange={(event)=>onHandleTitle(event)} variant="outlined" error={titleError} helperText={titleError?"Please enter title":" "} />
             <TextField sx={{width:"150px"}} label="" placeholder="price" name="price" type="number" value={price} onChange={(event)=>onHandlePrice(event)} variant="outlined" error={priceError} helperText={priceError?"Please enter Price":" "} />
-            <TextField
-            select name="category" label="category" value={category} onChange={(event)=>onHandlecategory(event)} error={!!categoryError} helperText={categoryError?"Please select category":" "} sx={{width:"150px"}} variant="outlined">
-             <MenuItem value="">Select Category</MenuItem>
-              <MenuItem value="food">food</MenuItem>
-              <MenuItem value="entertainment">entertainment</MenuItem>
-              <MenuItem value="travel">travel</MenuItem>
-            </TextField>
+           
+         <select name="category" label="category" value={category} onChange={(event)=>onHandlecategory(event)}  sx={{width:"150px"}} variant="outlined">
+             <option value="">Select Category</option>
+              <option value="food">food</option>
+              <option value="entertainment">entertainment</option>
+              <option value="travel">travel</option>
+         </select>
 
               <LocalizationProvider dateAdapter={AdapterDayjs}> 
               <DatePicker
