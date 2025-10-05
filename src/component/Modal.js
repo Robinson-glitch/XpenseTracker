@@ -187,7 +187,7 @@ const addBalance=()=>{
             <TextField sx={{width:"150px",gap:"10px"}} label=""  placeholder="title" name="title" type="text" value={title} onChange={(event)=>onHandleTitle(event)} variant="outlined" error={titleError} helperText={titleError?"Please enter title":" "} />
             <TextField sx={{width:"150px"}} label="" placeholder="price" name="price" type="number" value={price} onChange={(event)=>onHandlePrice(event)} variant="outlined" error={priceError} helperText={priceError?"Please enter Price":" "} />
             <TextField
-            select label="category"  value={category} onChange={(event)=>onHandlecategory(event)} error={!!categoryError} helperText={categoryError?"Please select category":" "} sx={{width:"150px"}} variant="outlined">
+            select name="category" label="category" value={category} onChange={(event)=>onHandlecategory(event)} error={!!categoryError} helperText={categoryError?"Please select category":" "} sx={{width:"150px"}} variant="outlined">
              <MenuItem value="">Select Category</MenuItem>
               <MenuItem value="food">food</MenuItem>
               <MenuItem value="entertainment">entertainment</MenuItem>
