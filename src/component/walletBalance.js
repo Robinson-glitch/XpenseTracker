@@ -58,6 +58,9 @@ const onClickAddBalance=(obj)=>{
 //console.log(typeof(addedBalance)); 
 }
 
+
+
+
 return(
 <Box className="walletBalanceview" sx={{display:"flex",flexDirection:"column",alignItems:"center"}}>
 <Typography className="balanceinfo">Wallet Balance:{displaywalletbalance}</Typography>

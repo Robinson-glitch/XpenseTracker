@@ -167,6 +167,7 @@ const addBalance=()=>{
 }
 }
 
+
   return (
      <div>
       <Modal
@@ -176,9 +177,11 @@ const addBalance=()=>{
       >
         <Box sx={style}>
           {isWalletView?<Box className="walletpopup" sx={{display:"flex",justifyContent:"space-between",gap:"10px"}}>
+            <form onSubmit={(event)=>addBalance(event)}>
             <TextField className="IncomeInput" type="number" sx={{width:"150px", borderRadius:"8px"}} placeholder="Income Amount" value={income} onChange={(event)=>onHandleIncome(event)} variant="outlined" label="" />
-            <Button onClick={addBalance} variant="contained">Add Balance</Button>
+            <Button type="submit" variant="contained">Add Balance</Button>
             <Button onClick={onClose} variant="contained">Cancel</Button>
+            </form>
           </Box>:<form onSubmit={(event)=>AddExpense(event)}>
             <Box sx={{display:"flex", flexWrap:"wrap",gap:"10px"}}>
             <TextField sx={{width:"150px",gap:"10px"}} label=""  placeholder="title" name="title" type="text" value={title} onChange={(event)=>onHandleTitle(event)} variant="outlined" error={titleError} helperText={titleError?"Please enter title":" "} />

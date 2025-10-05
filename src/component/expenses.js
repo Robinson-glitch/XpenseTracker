@@ -63,7 +63,7 @@ const submitupdate=(obj)=>{
 return(
 <Box className="expensebox">
 <Typography className="expenseInfo">Expenses:{totalExpenseAmount}</Typography>
-<Button className="addExpensebtn" variant="contained" onClick={handleAddExpenses}>Add Expense</Button>
+<Button className="addExpensebtn" variant="contained" onClick={handleAddExpenses}>+ Add Expense</Button>
 <BasicModal isediting={isediting} ref={editmodal} open={modalopen} onClose={handleClose} onClickSubmit={submithandle} onClickUpdate={submitupdate} />
 </Box>
 );
