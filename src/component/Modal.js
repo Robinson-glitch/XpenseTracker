@@ -189,9 +189,9 @@ const addBalance=()=>{
            
          <select name="category" label="category" value={category} onChange={(event)=>onHandlecategory(event)}  sx={{width:"150px"}} variant="outlined">
              <option value="">Select Category</option>
-              <option value="food">food</option>
-              <option value="entertainment">entertainment</option>
-              <option value="travel">travel</option>
+              <option value="Food">food</option>
+              <option value="Entertainment">entertainment</option>
+              <option value="Travel">travel</option>
          </select>
 
               <LocalizationProvider dateAdapter={AdapterDayjs}> 
