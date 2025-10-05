@@ -98,6 +98,7 @@ if(JSON.parse(balance)<JSON.parse(expenses)+priceval){
   alert("you are on fucking deficit bro");
 }
 else{
+onClose();
 const dateformatted = format(date,'yyyy-MM-dd');
     const expenseobj={
       Title:title,
@@ -163,6 +164,7 @@ const addBalance=()=>{
  const incomeobj={
   amount:inputAmount
 }
+onClose();
   handleAddBalance(incomeobj);  
 }
 }
