@@ -1,0 +1,52 @@
+
+.BalanceTrackerbox{
+    width:1211px;
+    height:269px;
+    padding-bottom:42px;
+    border-radius: 10px;
+    background-color:#626262 ;
+    display:flex;
+
+}
+
+.expensetab{
+    width:1256px;
+    height:781px;
+ padding-top:"36px";
+ padding-left:12px;
+    border-radius: 3px;
+     background-color: #3B3B3B;
+     /* position:absolute */
+}
+
+.recenttransaction{
+    width:1185px;
+    height:345px;
+    border:1px  black;
+    background-color: #9B9B9B;
+
+}
+.expensetabsub{
+    width:1211px;
+    height:692px;
+    padding-top:58px;
+    padding-left:20px; 
+    padding-right:25px;
+    padding-bottom:31px;
+     border:1px;
+    background-color:#9B9B9B 
+   
+}
+
+.expenseview{
+    width:760px;
+    height:181px;
+    padding-top:46px;
+    padding-left:58px; 
+    padding-right:92px;
+    padding-bottom:42px;
+    border-radius: 15px;
+    display:flex;
+    gap:49.8px
+}
+
